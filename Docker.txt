@@ -27,3 +27,4 @@ docker rmi  <image_id/image_name:tag> - removes an image
 
 docker build -t <tag_name> . - builds an image from DockerFile in current directory
 
+docker -v
