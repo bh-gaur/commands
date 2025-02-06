@@ -1,0 +1,18 @@
+kubectl config get-contexts
+kubectl config use-context <cluster_name>
+kubectl get ns
+kubectl get po -n <namespace>
+kubectl get svc 
+kubectl get deploy 
+kubectl get no 
+kubectl top po
+kubectl top no
+kubectl get po -o wide
+kubectl get pvc
+kubectl describe po <pod_name> -n <namespace>
+kubectl apply -f <file_name> 
+kubectl exec it <pod_name> bash -n <namespace>
+kubectl logs -f <pod_name> -n <namespace>
+kubectl delete po <pod_name> -n <namespace>
+kubectl get all --all-namespaces/-A
+kubectl get secrets
