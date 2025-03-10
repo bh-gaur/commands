@@ -11,8 +11,10 @@ kubectl get po -o wide
 kubectl get pvc
 kubectl describe po <pod_name> -n <namespace>
 kubectl apply -f <file_name> 
-kubectl exec it <pod_name> bash -n <namespace>
+kubectl exec -it <pod_name>  -n <namespace> --/bin/bash
 kubectl logs -f <pod_name> -n <namespace>
 kubectl delete po <pod_name> -n <namespace>
 kubectl get all --all-namespaces/-A
 kubectl get secrets
+kubectl create deployment my-app --image=<image-name> --replicas=1
+kubectl expose deployment <deployment-name> --type=<LoadBalancer or NodePort or ClusterIP> --port=<port_number>
