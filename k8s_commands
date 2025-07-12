@@ -18,3 +18,23 @@ kubectl get all --all-namespaces/-A
 kubectl get secrets
 kubectl create deployment my-app --image=<image-name> --replicas=1
 kubectl expose deployment <deployment-name> --type=<LoadBalancer or NodePort or ClusterIP> --port=<port_number>
+kubectl scale deployment <deployment_name> --replicas=<number_of_replicas>
+kubectl edit deployment <deployment_name>
+kubectl describe deployment <deployment_name>
+kubectl describe svc <service_name>
+kubectl get ingress
+kubectl apply -f <ingress_file.yaml>
+kubectl describe ingress <ingress_name>
+kubectl delete ingress <ingress_name>
+kubectl get configmap
+kubectl create configmap <configmap_name> --from-file=<file_path>
+kubectl describe configmap <configmap_name>
+kubectl delete configmap <configmap_name>
+kubectl get secrets
+kubectl create secret generic <secret_name> --from-literal=<key>=<value>
+kubectl describe secret <secret_name>
+kubectl delete secret <secret_name>
+kubectl get crd
+kubectl apply -f <crd_file.yaml>
+kubectl describe crd <crd_name>
+kubectl delete crd <crd_name>
